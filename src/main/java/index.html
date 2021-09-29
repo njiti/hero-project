@@ -11,9 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixcon.css" rel="style">
 
 </head>
-<body>
-<!--Sidebar-->
-<div class="sidebar">
+ <body>
+  <!--Sidebar-->
+  <div class="sidebar">
     <a href="#" class="logo">
         <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2F1000logos.net%2Fwp-content%2Fuploads%2F2017%2F02%2Fig-logo.png&imgrefurl=https%3A%2F%2F1000logos.net%2Finstagram-logo%2F&tbnid=QPAcZvKh9v9ZyM&vet=12ahUKEwiH6t-Uh_nyAhUGghoKHQxwCHYQMygeegUIARCTAg..i&docid=EQSQBx3e2exEMM&w=1800&h=600&q=ig%20logo&ved=2ahUKEwiH6t-Uh_nyAhUGghoKHQxwCHYQMygeegUIARCTAg" alt="">
     </a>
@@ -98,9 +98,9 @@
             Logout
         </a>
     </div>
-</div>
-<!--Main Home-->
-<div class="main-home">
+  </div>
+  <!--Main Home-->
+  <div class="main-home">
     <!--Header-->
     <div class="header">
         <!--Search-->
@@ -413,131 +413,173 @@
             <video class="view" src="Apex1.jpg.mp4" autoplay muted controls loop></video>
         </div>
     </div>
+  </div>
     <!--Order live gameplay!!-->
-    <section id="order-page" class="order-page">
-        <div class="container-fluid">
-            <div class="row order-and-cart">
-                <div class="col-lg-5 order">
-                    <form id="form-order" class="form ">
-                        <h2>Oder A Live Gameplay :</h2>
-                        <div class="pizza-size form-group">
-                            <h6>Which game do you want to allocate ?</h6>
-                            <div class="form-check">
-                                <input id="check1" class="input form-check-input" type="radio" name="size"value="large"/>
-                                <label for="check1" class="form-label">Apex</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="check2" class="input form-check-input" type="radio" name="size"value="medium"/>
-                                <label for="check2" class="form-check-label" >Warzone</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="check3" class="input form-check-input" type="radio" name="size"value="small"/>
-                                <label for="check3" class="form-check-label" >Fortnite</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="check3" class="input form-check-input" type="radio" name="size"value="small"/>
-                                <label for="check3" class="form-check-label" >Fifa</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="check3" class="input form-check-input" type="radio" name="size"value="small"/>
-                                <label for="check3" class="form-check-label" >PagG</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="check3" class="input form-check-input" type="radio" name="size"value="small"/>
-                                <label for="check3" class="form-check-label" >World of Warcraft</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="check3" class="input form-check-input" type="radio" name="size"value="small"/>
-                                <label for="check3" class="form-check-label" >Free fire</label>
-                                <div class="form-check">
-                                    <input id="check3" class="input form-check-input" type="radio" name="size"value="small"/>
-                                    <label for="check3" class="form-check-label" >Minecraft</label>
-                                </div>
-                            </div>
+  <div class="row order-and-cart">
+   <div class="container">
+    <div class="hero">
+        <div class="wrapper">
+            <form class="form">
+                 <label id="nameField">
+                      <input type="text" name="nameField" placeholder="name" required />
+                 </label>
 
-                        </div>
-                        <div class="pizza-crust form-group">
-                            <h6>Select Console to paly on:</6>
-                            <select class="input crust form-control" name="crust" id="crust">
-                                <option value="">---select---</option>
-                                <option value="crispy">PlayStation</option>
-                                <option value="stuffed">X-box</option>
-                                <option value="gluten-free">Nintendo</option>
-                                <option value="with-extra-cheese">Wii</option>
-                            </select>
-                        </div>
+                 <label id= "firstTeam">
+                       <input type="text" name="firstTeam" placeholder="Enter the First Team" required />
+                 </label>
 
-                        <div class="pizza-toppings form-group">
-                            <h6>Choose the three players:</h6>
-                            <div class="form-check">
-                                <input id="topping-mushroom" class="input topping" type="checkbox" name="topping" value="mushroom"/>
-                                <label for="topping-mushroom" class="form-check-label">Bloodhound</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="topping-sausage" class="input topping" type="checkbox" name="topping" value="sausage"/>
-                                <label for="topping-sausage" class="form-check-label">Caustic</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="topping-tomato" class="input topping" type="checkbox" name="topping" value="tomato"/>
-                                <label for="topping-tomato" class="form-check-label">Bangalore</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="topping-chicken" class="input topping" type="checkbox" name="topping" value="chicken"/>
-                                <label for="topping-chicken" class="form-check-label">Fuse</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="topping-cucumber" class="input topping" type="checkbox" name="topping" value="cucumber"/>
-                                <label for="topping-cucumber" class="form-check-label">
-                                    Gibraltar</label>
-                            </div>
+                 <label id= "secondTeam">
+                      <input type="text" name="secondTeam" placeholder="Enter the SecondTeam" required />
+                 </label>
 
-                            <h6>Choose the three oponents:</h6>
-                            <div class="form-check">
-                                <input id="topping-mushroom" class="input topping" type="checkbox" name="topping" value="mushroom"/>
-                                <label for="topping-mushroom" class="form-check-label">Raze</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="topping-sausage" class="input topping" type="checkbox" name="topping" value="sausage"/>
-                                <label for="topping-sausage" class="form-check-label">Sova</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="topping-tomato" class="input topping" type="checkbox" name="topping" value="tomato"/>
-                                <label for="topping-tomato" class="form-check-label">Omen</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="topping-chicken" class="input topping" type="checkbox" name="topping" value="chicken"/>
-                                <label for="topping-chicken" class="form-check-label">Phoenix</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="topping-cucumber" class="input topping" type="checkbox" name="topping" value="cucumber"/>
-                                <label for="topping-cucumber" class="form-check-label">Sova</label>
-                            </div>
-                        </div>
-                        <br>
+                 <label id= "numberOfRounds">
+                       <input type="number" name="numberOfRounds" placeholder="Enter number of rounds" required />
+                 </label>
+                 <input type="submit" value="submit" name="submit"/>
+            </form>
+       </div>
+    </div>
+   </div>
+  </div>
+  <section id="order-page" class="order-page">
+      <div class="container-fluid">
+          <div class="row order-and-cart">
+              <div class="col-lg-5 order">
+                  <form id="form-order" class="form ">
+                      <h2>MAKE YOUR ORDER</h2>
+                      <div class="pizza-size form-group">
+                          <h6>Choose your fill</h6>
+                          <div class="form-check">
+                              <input id="check1" class="input form-check-input" type="radio" name="size"value="large"/>
+                              <label for="check1" class="form-label">Large</label>
+                          </div>
+                          <div class="form-check">
+                              <input id="check2" class="input form-check-input" type="radio" name="size"value="medium"/>
+                              <label for="check2" class="form-check-label" >Medium</label>
+                          </div>
+                          <div class="form-check">
+                              <input id="check3" class="input form-check-input" type="radio" name="size"value="small"/>
+                              <label for="check3" class="form-check-label" >Small</label>
+                          </div>
 
-                        <label class="form-label" for="order-qty">Choose number of plays</label>
-                        <input type="number" class="input num-orders form-control" name="order-qty" value="1" id="order-qty" min="1"/>
-                        <div class="header-content">
-                            <a href="#" class="btn">
-                                <i class="fas fa-plus-circle"></i>
-                                <div class="btn-text" id="myBtn">Submit</div>
-                            </a>
-                        </div>
-                        <input type="text" placeholder="Predict Win?">
-                        <div class="header-content">
-                            <a href="#" class="btn">
-                                <i class="fas fa-plus-circle"></i>
-                                <div class="btn-text"  id="myBtn">Submit(optional)</div>
-                            </a>
-                        </div>
+                      </div>
+                      <div class="pizza-crust form-group">
+                          <h6>Select Crust type:</h6>
+                          <select class="input crust form-control" name="crust" id="crust">
+                              <option value="">---select---</option>
+                              <option value="crispy">Crispy</option>
+                              <option value="stuffed">Extra yeast</option>
+                              <option value="gluten-free">Stuffed</option>
+                              <option value="with-extra-cheese">With Extra cheese</option>
+                          </select>
+                      </div>
 
-                    </form>
-    </section>
+                      <div class="pizza-toppings form-group">
+                          <h6>Choose a Covering(s):</h6>
+                          <div class="form-check">
+                              <input id="topping-mushroom" class="input topping" type="checkbox" name="topping" value="mushroom"/>
+                              <label for="topping-mushroom" class="form-check-label">Buffalo legs</label>
+                          </div>
+                          <div class="form-check">
+                              <input id="topping-sausage" class="input topping" type="checkbox" name="topping" value="sausage"/>
+                              <label for="topping-sausage" class="form-check-label">Beef</label>
+                          </div>
+                          <div class="form-check">
+                              <input id="topping-tomato" class="input topping" type="checkbox" name="topping" value="tomato"/>
+                              <label for="topping-tomato" class="form-check-label">Tomato</label>
+                          </div>
+                          <div class="form-check">
+                              <input id="topping-chicken" class="input topping" type="checkbox" name="topping" value="chicken"/>
+                              <label for="topping-chicken" class="form-check-label">Cucumber</label>
+                          </div>
+                          <div class="form-check">
+                              <input id="topping-cucumber" class="input topping" type="checkbox" name="topping" value="cucumber"/>
+                              <label for="topping-cucumber" class="form-check-label">Chicken</label>
+                          </div>
+                      </div>
 
-    </a>
+                      <div class="form-group">
+                          <label class="form-label" for="order-qty">Your Orders</label>
+                          <input type="number" class="input num-orders form-control" name="order-qty" value="1" id="order-qty" min="1"/>
+                          <button id="add-to-cart" class="btn btn-primary">Add to cart</button>
+                          <div class="col-6">
+                              <label for="price">Price(Ksh): </label>
+                              <input type="number" id="price" readonly />
+                          </div>
+                      </div>
+                      <div class="delivery">
+                          <p>To Be Delivery At?</p>
+                          <input class="address" type="text" name="delivery-name" id="delivery-name" placeholder="Customer name"/>
+                          <input class="address" type="text" name="delivery-phone" id="delivery-phone" placeholder="Customer phone"/>
+                          <input class="address" type="text" name="delivery-address" id="delivery-address" placeholder="Customer address"/>
+                      </div>
 
-</div>
-<script src="index.js"></script>
-</body>
+                  </form>
+              </div>
+              <div class="col-7 cart">
+                  <h2 style="text-align: center">Cart</h2>
+                  <table class="table">
+                      <thead>
+                      <tr>
+                          <th scope="col">*</th>
+                          <th scope="col">Drop From Cart</th>
+                          <th scope="col">Order Description</th>
+                          <th scope="col">Quantity</th>
+                          <th scope="col">Cost</th>
+                      </tr>
+                      </thead>
+                      <tbody></tbody>
+                  </table>
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <label>
+                              Order cost:
+                              <input class="form-control" type="number" id="orders-cost" readonly/>
+                          </label>
+                          <label>
+                              Shipping cost:
+                              <input class="form-control" type="number" id="delivery-cost" readonly/>
+                          </label>
+                          <label>
+                              Total cost:
+                              <input class="form-control" type="number" id="total-cost" readonly/>
+                          </label>
+                      </div>
+
+                  </div>
+                  <div class="row">
+                      <div class="col-4"></div>
+                      <div class="col-4">
+                          <button id="submit-order" class="btn btn-success">Submit</button>
+                      </div>
+                      <div class="col-4"></div>
+
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <script src="Hero.java"></script>
+  <script>
+                const wrapper = document.querySelector('.wrapper'),
+                    form = wrapper.querySelectorAll('.form'),
+                    submitInput = form[0].querySelector('input[type="submit"]');
+
+            function getDataForm(e){
+                    e.preventDefault();
+
+            var formData = new FormData(form[0]);
+            alert(formData.get('nameField') + '-' + formData.get('emailField') +
+                    '-' + formData.get('numberOfTeams'));
+                }
+
+            document.addEventListener('DOMContentLoaded', function(){
+                submitInput.addEventListener('click', getDataForm, false);
+            }, false);
+  </script>
+
+ </body>
 
 </html>

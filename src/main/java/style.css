@@ -314,18 +314,137 @@ body{
     gap: 100px;
 }
 /*Live game play order*/
+
 form {
-    background-color: rgba(151, 147, 149, 0.5);
+    background-color: rgb(216, 111, 164, 0.5);
 }
+.form-check{
+    display: inline-block;
+    width: 100px;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.wrapper{
+   width: 400px;
+   max-width: 90%;
+   margin: 0 auto;
+}
+.wrapper label{
+    display: block;
+    margin: 0.5em 0;
+}
+.wrapper label input{
+    font-size: 18px;
+    padding: 0.5em;
+}
+.wrapper input[type="submit"]{
+     font-size: 25px;
+     color: blue;
+}
+/**/
+form h2 {
+    color: rgba(2, 1, 1, 0.5);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    background-color: rgba(168, 80, 139, 0.5);
+}
+.landing {
+    background-image: url("../assets/background-images/hawaiian-pizza.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.developer-content {
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+}
+
+.developer-content h3 {
+    background-color: rgba(197, 75, 177, 0.5);
+    text-align: center;
+}
+
+.developer-content h1 {
+    background-color: rgb(203, 58, 216);
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+section.order {
+    background-color: rgba(182, 81, 195, 0.5);
+    padding: 5px;
+    margin: 2rem 3rem;
+
+}
+.order {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+}
+
+.order-and-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/**/
+form {
+    background-color: rgb(216, 111, 164, 0.5);
+}
+
+.form-check{
+    display: inline-block;
+    width: 100px;
+}
+
 .form-control {
     width: 200px;
     height: inherit;
 }
+/**/
 .delivery input {
     display: block;
     margin-bottom: 1rem;
 }
+
 input.num-orders {
     width: 5rem;
     height: 2rem;
+}
+
+#add-to-cart {
+    float: right;
+}
+
+.cart {
+    background-color: rgb(216, 111, 164, 0.5);
+    align-self: flex-start;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.cart table {
+    overflow-y: auto;
+    width: 100%;
+    background-color: white;
 }

@@ -422,29 +422,20 @@ form {
     height: inherit;
 }
 /**/
-.delivery input {
+.wrapper{
+    width: 400px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.wrapper label{
     display: block;
-    margin-bottom: 1rem;
+    margin: 0.5em 0;
 }
-
-input.num-orders {
-    width: 5rem;
-    height: 2rem;
+.wrapper label input{
+    font-size: 18px;
+    padding: 0.5em;
 }
-
-#add-to-cart {
-    float: right;
-}
-
-.cart {
-    background-color: rgb(216, 111, 164, 0.5);
-    align-self: flex-start;
-    height: 100%;
-    overflow-y: scroll;
-}
-
-.cart table {
-    overflow-y: auto;
-    width: 100%;
-    background-color: white;
+.wrapper input[type="submit"]{
+    font-size: 25px;
+    color: blue;
 }

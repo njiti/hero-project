@@ -415,170 +415,72 @@
     </div>
   </div>
     <!--Order live gameplay!!-->
-  <div class="row order-and-cart">
-   <div class="container">
-    <div class="hero">
-        <div class="wrapper">
-            <form class="form">
-                 <label id="nameField">
-                      <input type="text" name="nameField" placeholder="name" required />
-                 </label>
+  <h1>Choose Players</h1>
+  <div class="wrapper">
+      <form class="form">
+          <h3>The available players are:</h3>
+          <ul>
+              <il>Bangalore,</il>
+              <il>Caustic,</il>
+              <il>Fuse,</il>
+              <il>Gibraltar,</il>
+              <il>Horizon</il>
+              <il>and Valkyrie.</il>
+          </ul>
+          <h3>A player can only be in one team</h3>
+          <label id="firstPlayers">
+              <input type="text" name="firstPlayers" placeholder="choose the first team" required />
+          </label>
 
-                 <label id= "firstTeam">
-                       <input type="text" name="firstTeam" placeholder="Enter the First Team" required />
-                 </label>
+          <label id= "secondPlayers">
+              <input type="text" name="secondPlayers" placeholder="choose the second team" required />
+          </label>
 
-                 <label id= "secondTeam">
-                      <input type="text" name="secondTeam" placeholder="Enter the SecondTeam" required />
-                 </label>
-
-                 <label id= "numberOfRounds">
-                       <input type="number" name="numberOfRounds" placeholder="Enter number of rounds" required />
-                 </label>
-                 <input type="submit" value="submit" name="submit"/>
-            </form>
-       </div>
-    </div>
-   </div>
+          <h2>Choose number of plays(to a maximum of ten)</h2>
+          <label id= "numberOfPlays">
+              <input type="number" name="numberOfPlays" placeholder="number of plays" required />
+          </label>
+          <input type="submit" value="submit" name="submit" id="submit" />
+      </form>
   </div>
-  <section id="order-page" class="order-page">
-      <div class="container-fluid">
-          <div class="row order-and-cart">
-              <div class="col-lg-5 order">
-                  <form id="form-order" class="form ">
-                      <h2>MAKE YOUR ORDER</h2>
-                      <div class="pizza-size form-group">
-                          <h6>Choose your fill</h6>
-                          <div class="form-check">
-                              <input id="check1" class="input form-check-input" type="radio" name="size"value="large"/>
-                              <label for="check1" class="form-label">Large</label>
-                          </div>
-                          <div class="form-check">
-                              <input id="check2" class="input form-check-input" type="radio" name="size"value="medium"/>
-                              <label for="check2" class="form-check-label" >Medium</label>
-                          </div>
-                          <div class="form-check">
-                              <input id="check3" class="input form-check-input" type="radio" name="size"value="small"/>
-                              <label for="check3" class="form-check-label" >Small</label>
-                          </div>
 
-                      </div>
-                      <div class="pizza-crust form-group">
-                          <h6>Select Crust type:</h6>
-                          <select class="input crust form-control" name="crust" id="crust">
-                              <option value="">---select---</option>
-                              <option value="crispy">Crispy</option>
-                              <option value="stuffed">Extra yeast</option>
-                              <option value="gluten-free">Stuffed</option>
-                              <option value="with-extra-cheese">With Extra cheese</option>
-                          </select>
-                      </div>
-
-                      <div class="pizza-toppings form-group">
-                          <h6>Choose a Covering(s):</h6>
-                          <div class="form-check">
-                              <input id="topping-mushroom" class="input topping" type="checkbox" name="topping" value="mushroom"/>
-                              <label for="topping-mushroom" class="form-check-label">Buffalo legs</label>
-                          </div>
-                          <div class="form-check">
-                              <input id="topping-sausage" class="input topping" type="checkbox" name="topping" value="sausage"/>
-                              <label for="topping-sausage" class="form-check-label">Beef</label>
-                          </div>
-                          <div class="form-check">
-                              <input id="topping-tomato" class="input topping" type="checkbox" name="topping" value="tomato"/>
-                              <label for="topping-tomato" class="form-check-label">Tomato</label>
-                          </div>
-                          <div class="form-check">
-                              <input id="topping-chicken" class="input topping" type="checkbox" name="topping" value="chicken"/>
-                              <label for="topping-chicken" class="form-check-label">Cucumber</label>
-                          </div>
-                          <div class="form-check">
-                              <input id="topping-cucumber" class="input topping" type="checkbox" name="topping" value="cucumber"/>
-                              <label for="topping-cucumber" class="form-check-label">Chicken</label>
-                          </div>
-                      </div>
-
-                      <div class="form-group">
-                          <label class="form-label" for="order-qty">Your Orders</label>
-                          <input type="number" class="input num-orders form-control" name="order-qty" value="1" id="order-qty" min="1"/>
-                          <button id="add-to-cart" class="btn btn-primary">Add to cart</button>
-                          <div class="col-6">
-                              <label for="price">Price(Ksh): </label>
-                              <input type="number" id="price" readonly />
-                          </div>
-                      </div>
-                      <div class="delivery">
-                          <p>To Be Delivery At?</p>
-                          <input class="address" type="text" name="delivery-name" id="delivery-name" placeholder="Customer name"/>
-                          <input class="address" type="text" name="delivery-phone" id="delivery-phone" placeholder="Customer phone"/>
-                          <input class="address" type="text" name="delivery-address" id="delivery-address" placeholder="Customer address"/>
-                      </div>
-
-                  </form>
-              </div>
-              <div class="col-7 cart">
-                  <h2 style="text-align: center">Cart</h2>
-                  <table class="table">
-                      <thead>
-                      <tr>
-                          <th scope="col">*</th>
-                          <th scope="col">Drop From Cart</th>
-                          <th scope="col">Order Description</th>
-                          <th scope="col">Quantity</th>
-                          <th scope="col">Cost</th>
-                      </tr>
-                      </thead>
-                      <tbody></tbody>
-                  </table>
-                  <div class="row">
-                      <div class="col-lg-12">
-                          <label>
-                              Order cost:
-                              <input class="form-control" type="number" id="orders-cost" readonly/>
-                          </label>
-                          <label>
-                              Shipping cost:
-                              <input class="form-control" type="number" id="delivery-cost" readonly/>
-                          </label>
-                          <label>
-                              Total cost:
-                              <input class="form-control" type="number" id="total-cost" readonly/>
-                          </label>
-                      </div>
-
-                  </div>
-                  <div class="row">
-                      <div class="col-4"></div>
-                      <div class="col-4">
-                          <button id="submit-order" class="btn btn-success">Submit</button>
-                      </div>
-                      <div class="col-4"></div>
-
-                  </div>
-
-              </div>
-          </div>
-      </div>
-  </section>
-
-  <script src="Hero.java"></script>
+  </div>
   <script>
-                const wrapper = document.querySelector('.wrapper'),
-                    form = wrapper.querySelectorAll('.form'),
-                    submitInput = form[0].querySelector('input[type="submit"]');
+const wrapper = document.querySelector('.wrapper'),
+                form = wrapper.querySelectorAll('.form'),
+                submitInput = form[0].querySelector('input[type="submit"]');
 
-            function getDataForm(e){
+                function getDataForm(e){
                     e.preventDefault();
 
-            var formData = new FormData(form[0]);
-            alert(formData.get('nameField') + '-' + formData.get('emailField') +
-                    '-' + formData.get('numberOfTeams'));
+                    var formData = new FormData(form[0]);
+                    alert(formData.get('firstPlayers') + '-' + formData.get('secondPlayers') +
+                    '-' + formData.get('numberOfPlays'));
                 }
 
-            document.addEventListener('DOMContentLoaded', function(){
-                submitInput.addEventListener('click', getDataForm, false);
-            }, false);
-  </script>
+                document.addEventListener('DOMContentLoaded', function(){
+                    submitInput.addEventListener('click', getDataForm, false);
+                }, false);
+
+                $("#submit").click(function () {
+
+                    if (firstPlayers > 3()) {
+                     alert(`
+                           You cannot submit more than three players
+                          `)
+
+                 location.reload()
+                } else if (secondPlayers > 3) {
+                alert(`
+                     You cannot submit more than three players
+                     `)
+                } else {
+                    alert(`
+                         You have successfully submitted
+                         `)
+                }
+            })
+        </script>
 
  </body>
 
